@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { logout } from "../../functions/logout";
+import './Doubts.css'
+import Doubtsnav from "../../components/Doubtsnav/Doubtsnav";
 const DoubtsPage = () => {
   // since user is alreaddy there if doubt page loaded.
   const [isUser,setIsuser]=useState(true);
@@ -30,8 +32,9 @@ const DoubtsPage = () => {
     getUser();
   }, []);
   return (
-    <div>
-      doubts bro
+    <div className="doubts-container">
+    <Doubtsnav/>
+      {/* doubts bro
       <button
         onClick={async () =>{
           await logout(auth)
@@ -39,7 +42,7 @@ const DoubtsPage = () => {
         }
       >
         Signout
-      </button>
+      </button> */}
     </div>
   );
 };
