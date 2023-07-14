@@ -7,7 +7,7 @@ const Doubtsnav = () => {
       <div className="company-name">DoubtLess</div>
       <div className="search-bar">
         <div><FiSearch/></div>
-        <input type="text" placeholder="Search for already existing doubts" />
+        <input type="text" placeholder="Search for already asked doubts" />
       </div>
       <div className="icons">
         <div className="notification-icon"><RiNotification4Line/></div>
